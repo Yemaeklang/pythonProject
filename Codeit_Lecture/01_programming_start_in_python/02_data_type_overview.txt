@@ -1,0 +1,9 @@
+# 자료형 개요
+    # 숫자형(Number)
+        # 정수(Integer) : 1 2 3 6 0 -1 -6
+        # 소수(Floating point) : 3.14 -7.3 2.
+    # 문자열(String)
+        # "hello" "world" "2"
+    # 불린(Boolean) : 참과 거짓
+        # True : 3 < 7
+        # False : 3 > 7
