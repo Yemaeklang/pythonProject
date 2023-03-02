@@ -2,5 +2,3 @@ Hello world!
 My name is Codeit.
 Hello world!
 My name is Codeit.
-Hello world!
-My name is Codeit.
