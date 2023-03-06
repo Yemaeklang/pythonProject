@@ -11,7 +11,7 @@ def sorting(list):
         i += 1
     return list
 
-
+# test code
 my_numbers = [4, 2, 7, 1, 9, 3, 8, 5, 6]
 
 print(sorting(my_numbers))
