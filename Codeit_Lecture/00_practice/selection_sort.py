@@ -1,4 +1,4 @@
-def sorting(list):
+def selection_sort(list):
     i = 0
     while i < len(list) - 1:
         j = i + 1
@@ -15,4 +15,4 @@ def sorting(list):
 # test code
 my_numbers = [4, 2, 7, 1, 9, 3, 8, 5, 6]
 
-print(sorting(my_numbers))
+print(selection_sort(my_numbers))
