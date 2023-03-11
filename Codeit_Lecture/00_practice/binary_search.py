@@ -1,15 +1,16 @@
 def binary_search(element, some_list):
+    new = list(some_list)
     index_min = 0
-    index_max = len(some_list) - 1
+    index_max = len(new) - 1
     while index_min <= index_max:
         mid_index = (index_min + index_max) // 2
-        if element == some_list[mid_index]:
+        if element == new[mid_index]:
             return mid_index
-        elif element > some_list[mid_index]:
+        elif element > new[mid_index]:
             index_min = mid_index + 1
         else:
             index_max = mid_index - 1
-    return None
+    return
 
 
 print(binary_search(2, [2, 3, 5, 7, 11]))

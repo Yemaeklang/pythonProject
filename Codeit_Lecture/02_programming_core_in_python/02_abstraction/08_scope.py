@@ -36,8 +36,9 @@ print(x2)
 x3 = 1  # 글로벌 변수 x3
 
 
+# noinspection PyShadowingNames
 def my_function_third():
-    x3 = 4  # 로컬 변수 x3
+    x3 = 4  # 로컬 변수 x_3
     print(x3)
 
 

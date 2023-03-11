@@ -32,7 +32,7 @@ numbers = [2, 3, 5, 7, 11, 13, 17, 19]
 # 리스트 뒤집기
 for left in range(len(numbers) // 2):
     temp = numbers[left]
-    numbers[left] = numbers[- left - 1]
-    numbers[- left - 1] = temp
+    numbers[left] = numbers[len(numbers) - left]
+    numbers[len(numbers) - left] = temp
 
 print("뒤집어진 리스트: " + str(numbers))

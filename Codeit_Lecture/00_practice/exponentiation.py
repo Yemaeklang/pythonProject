@@ -14,4 +14,5 @@ def exponentiation(base, power):
 
 
 # test code
-print(exponentiation(2, 31))
+n1, n2 = map(int, input("구하고자하는 X의 n제곱에 해당하는 X, n 입력 : ").split())
+print(exponentiation(n1, n2))

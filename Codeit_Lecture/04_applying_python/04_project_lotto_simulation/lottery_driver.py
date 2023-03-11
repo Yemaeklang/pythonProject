@@ -105,16 +105,18 @@ HEAD_HTML = '''
         }
     </style>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS --> <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Optional theme --> <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+    integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</head>
-'''
+    <!-- Latest compiled and minified JavaScript --> <script 
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+    crossorigin="anonymous"></script> </head>'''
 
 MAIN_HTML = '''
 <!DOCTYPE html>
@@ -188,12 +190,13 @@ def generate_numbers_html(numbers):
 
     html = ""
     for number in numbers[:6]:
-        html += ball_html.format(number = number, color = get_color(number))
+        html += ball_html.format(number=number, color=get_color(number))
     html += '<span class="plus">+</span>'
-    html += ball_html.format(number = numbers[-1], color = get_color(numbers[-1]))
+    html += ball_html.format(number=numbers[-1], color=get_color(numbers[-1]))
     return html
 
 
+# noinspection PyShadowingNames
 def generate_attempt_html(attempt, winning_numbers):
     number_html = '''
     <span class="attempt-number">{number}</span>
@@ -229,6 +232,7 @@ def generate_attempt_html(attempt, winning_numbers):
     return html
 
 
+# noinspection PyShadowingNames
 def main(winning_numbers, tries, total_prize, total_cost):
     out_file = open('lottery.html', 'w', encoding='utf-8')
 
@@ -244,7 +248,7 @@ def main(winning_numbers, tries, total_prize, total_cost):
         attempts=attempts_html,
         total_prize=total_prize,
         total_cost=total_cost)
-    )
+                   )
     out_file.close()
 
 

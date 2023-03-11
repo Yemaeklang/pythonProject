@@ -13,15 +13,12 @@
 # 1
 # 4
 def linear_search(element, some_list):
-    i = 0;
-    if element not in some_list:
-        return "None"
-    else:
-        while i <= len(some_list):
-            if element == some_list[i]:
-                return i
-            else:
-                i += 1
+    i = 0
+    while i < len(some_list):
+        if element == some_list[i]:
+            return i
+        i += 1
+    return
 
 
 print(linear_search(2, [2, 3, 5, 7, 11]))
